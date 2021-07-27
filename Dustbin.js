@@ -6,15 +6,16 @@ class Dustbin{
         'friction': 1,
         'density': 0.1
     }
-    this.body = Bodies.Rectangle(x,y,width,height,options);
+    this.body = Bodies.rectangle(x,y,width,height,options);
     this.width = width;
     this.height = height
 
     World.add(world, this.body)
     }
+
     display(){
 
-    rectMODE(CENTER);
+    rectMode(CENTER);
 
     fill(255);
 

@@ -6,7 +6,7 @@ class Ground{
         'friction': 0,
         'density': 1
     }
-    this.body = Bodies.Rectangle(x,y,width,height,options);
+    this.body = Bodies.rectangle(x,y,width,height,options);
     this.width = width;
     this.height = height
 
@@ -14,7 +14,7 @@ class Ground{
     }
     display(){
 
-    rectMODE(CENTER);
+    rectMode(CENTER);
 
     fill(255);
 

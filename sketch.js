@@ -22,7 +22,7 @@ function setup() {
 
 	ground1 = new Ground(400,680,800,20);
 
-	leftside11 = new Dustbin(550,620,20,100);
+	leftside1 = new Dustbin(550,620,20,100);
 	bottomside1 = new Dustbin(610,660,100,20);
 	rightside1 = new Dustbin(670,620,20,100);
 
@@ -40,11 +40,11 @@ function draw() {
 
   Engine.update(engine)
 
-  paper.display()
-  ground.display()
-  leftside.display()
-  bottomside.display()
-  rightside.display()
+  paper1.display()
+  ground1.display()
+  leftside1.display()
+  bottomside1.display()
+  rightside1.display()
 
 
   
@@ -53,8 +53,8 @@ function draw() {
 }
 
 function keyPressed(){
-	if(keycode == UP_ARROW){
-		Matter.Body.applyForce(paper.body, paper.body.position, {x:15, y:-15})
+	if(keyCode === UP_ARROW){
+		Matter.Body.applyForce(paper1.body, paper1.body.position, {x:11, y:-11})
 	}
 }
 
